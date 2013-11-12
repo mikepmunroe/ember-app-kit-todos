@@ -6,7 +6,9 @@ Router.map(function(){
     this.route('active');
     this.route('completed');
   });
-  this.resource('todos');
+  this.resource('users', function() {
+    this.route('new'); 
+  });
 });
 
 export default Router;
